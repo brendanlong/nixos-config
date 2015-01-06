@@ -41,4 +41,5 @@
       dataDir = "/home/blong";
     };
   };
+  networking.firewall.allowedTCPPorts = [25 80 143];
 }

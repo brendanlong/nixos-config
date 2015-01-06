@@ -28,7 +28,6 @@
     hostId = "7910d02f";
     firewall = {
       allowPing = true;
-      allowedTCPPorts = [80];
     };
   };
 
