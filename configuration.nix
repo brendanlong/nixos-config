@@ -18,6 +18,12 @@
     extraPerEntryConfig = "root (hd0)";
   };
 
+  swapDevices = [
+    { device = "/var/swapfile";
+      size = 2048;
+    }
+  ];
+
   networking.hostName = "brendanlong.com";
   networking.hostId = "7910d02f";
 
