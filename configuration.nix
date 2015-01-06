@@ -26,7 +26,10 @@
   networking = {
     hostName = "brendanlong.com";
     hostId = "7910d02f";
-    firewall.allowPing = true;
+    firewall = {
+      allowPing = true;
+      allowedTCPPorts = [80];
+    };
   };
 
   i18n = {
