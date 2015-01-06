@@ -37,8 +37,11 @@
 
   # List services that you want to enable:
 
-  # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
+  services.openssh = {
+    enable = true;
+    permitRootLogin = "no";
+    passwordAuthentication = false;
+  };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.extraUsers.blong = {
