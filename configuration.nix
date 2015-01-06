@@ -6,7 +6,7 @@
       ./hardware-configuration.nix
       ./packages.nix
       ./users.nix
-      ./services/enabled-services.nix
+      ./services
     ];
 
   # Use the GRUB 2 boot loader.
