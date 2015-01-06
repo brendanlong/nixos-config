@@ -24,8 +24,11 @@
     }
   ];
 
-  networking.hostName = "brendanlong.com";
-  networking.hostId = "7910d02f";
+  networking = {
+    hostName = "brendanlong.com";
+    hostId = "7910d02f";
+    firewall.allowPing = true;
+  };
 
   # Select internationalisation properties.
   i18n = {
