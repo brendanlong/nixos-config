@@ -17,6 +17,13 @@
       passwordAuthentication = false;
     };
 
+    postfix = {
+      enable = true;
+      postmasterAlias = "blong";
+      rootAlias = "blong";
+      extraAliases = "self: blong";
+    };
+
     syncthing = {
       enable = true;
       user = "blong";
