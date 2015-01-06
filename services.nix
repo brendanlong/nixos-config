@@ -1,5 +1,10 @@
 {
   services = {
+    dovecot2 = {
+      enable = true;
+      enablePop3 = false;
+    };
+
     httpd = {
       enable = true;
       adminAddr = "self@brendanlong.com";
